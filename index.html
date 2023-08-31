@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="memos.css">
+    <script lang="javascript" src="main.js"></script>
+    <script lang="javascript" src="memos.js"></script>
+    <title>Front Page</title>
+</head>
+<body>
+    <navbar>
+        <div><img src="logo.png"></div>
+        <div><input type="button" value="Settings" id="openSettings"></div>
+    </navbar>
+    <article>
+        <section class="front-page" id="frontPage">
+            <label class="front-page-control" id="createMemo">Create memo</label>
+            <label class="front-page-control"><input type="file" id="openMemo">Open memo</label>    
+        </section>
+        <section class="editor" style="display:none;" id="editor">
+            <div class="memo-frame" id="memoFrame">
+                <div class="memo-tape" id="memoTape" style="left: 0vw;"></div>
+            </div>
+            <div class="control">
+                <input type="button" id="ctlPrev" value="Prev">
+                <input type="button" id="ctlSave" value="Save">
+                <input type="button" id="ctlNext" value="Next">
+            </div>
+        </section>
+        <section class="settings" style="display: none;" id="settings">
+            <div class="control">
+                <input type="button" value="Save" id="saveSettings">
+                <input type="button" value="Close" id="closeSettings">
+            </div>
+            <ul class="items" type="none">
+                <li><label for="memocolor">Memo Color</label><input type="color" id="memocolor" name="memocolor"></li>
+                <li><label for="fontsize">Font size</label><input type="number" id="fontsize" name="fontsize"></li>
+                <li><label for="whitetext">White text</label><input type="checkbox" id="whitetext" name="whitetext"></li>
+            </table>
+        </section>
+    </article>
+    <script lang="javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# MemoMate: Your Personal Memo App
+# MemoMate: Your Personal Memo App 📝
 
 ## Features
 
